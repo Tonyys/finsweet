@@ -1,0 +1,31 @@
+.worldwide {
+  padding: 96px;
+  &__inner {
+    display: flex;
+  }
+
+  &__left {
+    max-width: 594px;
+    margin-right: 110px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+
+    @extend %heading_1;
+    color: var(--primary_text);
+  }
+
+  &__subtitle {
+    @extend %paragraph;
+    color: var(--secondary_text);
+  }
+}

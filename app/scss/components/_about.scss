@@ -1,0 +1,50 @@
+.about {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+
+  }
+
+
+  &__text {
+    max-width: 607px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @extend %heading_2;
+    color: var(--primary_text);
+  }
+
+  &__subtitle {
+    margin-bottom: 64px;
+    p {
+      @extend %paragraph;
+      color: var(--secondary_text);
+    }
+    p:nth-child(1) {
+      margin-bottom: 32px;
+    }
+
+  }
+
+  &__right {
+    max-width: 480px;
+    position: relative;
+  }
+
+  &__play {
+    position: absolute;
+    top: 257px;
+    left: 208px;
+  }
+
+}

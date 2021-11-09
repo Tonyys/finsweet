@@ -1,0 +1,39 @@
+.nonprofit {
+  padding-top: 96px;
+  padding-bottom: 320px;
+  &__inner {
+    display: flex;
+  }
+
+  &__left {
+    max-width: 624px;
+    margin-right: 64px;
+
+    display: flex;
+  }
+
+  &__title {
+    @extend %heading_1;
+    color: var(--primary_text);
+
+  }
+
+  &__right {
+    margin-top: 64px;
+    max-width: 496px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary_text);
+  }
+
+  &__paragraph {
+    @extend %paragraph;
+    opacity: .7;
+
+  }
+}

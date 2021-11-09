@@ -1,0 +1,108 @@
+:root{
+  --font: 'Roboto', sans-serif;
+  --accent: orange;
+  --defaultColor: #333;
+  --green_primary:#70C174;
+  --green_secondary:#BEF3C0;
+  --green_tertiary:#EFF7F2;
+  --black:#0B0706;
+  --primary_text:#1D2130;
+  --secondary_text:#525560;
+  --off_white:#EBF0F9;
+}
+//fonts
+
+%home_heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 120%;
+}
+%heading_1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+}
+%heading_2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+}
+%heading_3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 150%;
+}
+%heading_4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+}
+%heading_5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+}
+%heading_6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+}
+%paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+}
+%paragraph_small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+// color
+
+
+
+// button
+
+.primary__btn {
+  padding: 16px 32px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: white;
+  background-color: var(--green_primary);
+}
+
+.secondary__btn {
+  padding: 16px 32px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  background-color: white;
+  color: var(--primary_text);
+}
+
+.navbar__btn {
+  padding: 12px 32px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: white;
+  background-color: var(--primary_text);
+}
+
+

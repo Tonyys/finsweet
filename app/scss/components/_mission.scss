@@ -1,0 +1,68 @@
+.mission {
+  padding-bottom: 32px;
+  background-color: var(--green_tertiary);
+  &__inner {
+    position: relative;
+  }
+
+  &__top {
+    position: absolute;
+    left: 0;
+    top: -224px;
+  }
+
+  &__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__img {
+
+  }
+
+  &__play {
+    position: absolute;
+    left: 608px;
+    top: 192px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 320px;
+    max-width: 1088px;
+    margin: 0 auto 96px;
+  }
+
+  &__item {
+    max-width: 496px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  &__suptitle {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary_text);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    @extend %heading_3;
+    color: var(--primary_text);
+  }
+
+  &__subtitle {
+    @extend %paragraph;
+    opacity: .7;
+  }
+}

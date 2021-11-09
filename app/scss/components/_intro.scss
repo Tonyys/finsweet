@@ -1,0 +1,68 @@
+.intro {
+  padding-top: 128px;
+  padding-bottom: 64px;
+  background-image: url("../img/intro/intro__bg.png");
+  background-size: cover;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__top {
+    margin-bottom: 192px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    max-width: 640px;
+    margin-bottom: 48px;
+
+    color: white;
+    @extend %home_heading;
+  }
+  &__accesses {
+    max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+
+  .play__btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    img {
+      margin-right: 8px;
+    }
+    span {
+      white-space: nowrap;
+      color: white;
+    }
+  }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+      }
+      div {
+        width: 67%;
+        height: 1px;
+        background-color: #E5E5E5;
+
+        backdrop-filter: blur(30px);
+      }
+    }
+
+
+}

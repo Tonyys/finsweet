@@ -1,0 +1,125 @@
+.projects {
+  padding-top: 95px;
+  padding-bottom: 95px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .indent__line {
+    margin-top: 10px;
+    margin-right: 24px;
+    height: 2px;
+    width: 72px;
+
+    background-color: var(--primary_text);
+  }
+
+  &__top {
+    display: flex;
+    width: 100%;
+    margin-bottom: 65px;
+  }
+
+  &__top-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__suptitle {
+    display: inline-block;
+    margin-bottom: 32px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+    color: var(--primary_text);
+  }
+
+  &__title {
+    max-width: 640px;
+
+    margin-bottom: 16px;
+
+    @extend %heading_2;
+    color: var(--primary_text);
+  }
+
+  &__bottom {
+
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 32%;
+    padding: 80px 48px 48px 48px;
+    border-radius: 14px;
+    position: relative;
+    z-index: 1;
+
+    &:nth-child(1) {
+      background-image: url("../img/projects/item-1.png");
+      background-size: cover;
+    }
+    &:nth-child(2) {
+      background-image: url("../img/projects/item-2.png");
+      background-size: cover;
+      &:after {
+        background-color: rgba(0,0,0,.8);
+      }
+    }
+    &:nth-child(3) {
+      background-image: url("../img/projects/item-3.png");
+      background-size: cover;
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.5);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      pointer-events:none;
+      border-radius: 14px;
+    }
+  }
+
+  &__item-title {
+    max-width: 315px;
+
+    margin-bottom: 16px;
+
+    @extend %heading_3;
+    color: white;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__item-subtitle {
+    max-width: 315px;
+
+    margin-bottom: 64px;
+
+    @extend %paragraph;
+    color: white;
+    position: relative;
+    z-index: 3;
+  }
+
+  .secondary__btn-relative {
+    position: relative;
+    z-index: 3;
+  }
+
+}

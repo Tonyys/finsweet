@@ -1,0 +1,39 @@
+.supporters{
+  margin-bottom: 64px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    margin-bottom: 32px;
+
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 24px;
+
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--primary_text);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__line {
+    width: 85%;
+    height: 1px;
+    background-color: #E5E5E5;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+  }
+
+}
