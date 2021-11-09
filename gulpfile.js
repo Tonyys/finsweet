@@ -104,7 +104,8 @@ if (gulpVersion == 4) {
 		gulp.watch('app/*.html', gulp.parallel('code'));
 		gmWatch && gulp.watch('app/img/_src/**/*', gulp.parallel('img')); // GraphicsMagick watching image sources if allowed.
 	});
-	gmWatch ? gulp.task('default', gulp.parallel('img', 'styles', 'scripts', 'browser-sync', 'watch')) 
+	gulp.task('build', gulp.parallel('styles', 'scripts', 'browser-sync'));
+	gmWatch ? gulp.task('default', gulp.parallel('img', 'styles', 'scripts', 'browser-sync', 'watch'))
 					: gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
 
 };
