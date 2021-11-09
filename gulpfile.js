@@ -96,6 +96,16 @@ if (gulpVersion == 3) {
 // If Gulp Version 4
 if (gulpVersion == 4) {
 
+	gulp.task('buildStyles', function() {
+		return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
+			.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
+			.pipe(rename({ suffix: '.min', prefix : '' }))
+			.pipe(autoprefixer(['last 15 versions']))
+			.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+			.pipe(gulp.dest('app/css'))
+	});
+
+
 	gulp.task('clean', function() {
 		return del(['dist/**/*'], { force:true })
 	});
@@ -119,7 +129,7 @@ if (gulpVersion == 4) {
 		gulp.watch('app/*.html', gulp.parallel('code'));
 		gmWatch && gulp.watch('app/img/_src/**/*', gulp.parallel('img')); // GraphicsMagick watching image sources if allowed.
 	});
-	gulp.task('build', gulp.parallel('clean' , 'build'));
+	gulp.task('build', gulp.parallel('clean' , 'buildStyles' , 'build'));
 	gmWatch ? gulp.task('default', gulp.parallel('img', 'styles', 'scripts', 'browser-sync', 'watch'))
 					: gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
 
