@@ -101,7 +101,8 @@ if (gulpVersion == 4) {
 	});
 	gulp.task('build', function() {
 		return gulp.src([
-			'{app/js,app/css}/*.min.*',
+			'app/css/**/*.*',
+			'app/js/**/*.*',
 			'app/img/**/*.*',
 			'app/*.html',
 			'app/fonts/**/*'
