@@ -1,0 +1,26 @@
+.how {
+  padding-top: 96px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @extend %heading_2;
+    color: var(--primary_text);
+  }
+
+  &__subtitle {
+    @extend %paragraph;
+    color: var(--secondary_text);
+  }
+
+  &__big {
+    max-width: 374px;
+  }
+
+  &__small {
+    max-width: 339px;
+  }
+}

@@ -13,6 +13,29 @@
     align-items: center;
   }
 
+  .recentnews__top {
+    margin: 96px auto 48px;
+    max-width: 488px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .recentnews__title {
+    margin-bottom: 16px;
+
+    @extend %heading_2;
+    color: var(--primary_text);
+  }
+
+  .recentnews__subtitle {
+    max-width: 450px;
+    margin: 0 auto;
+
+    @extend %paragraph;
+    color: var(--secondary_text);
+  }
+
   &__suptitle {
     font-size: 40px;
     font-weight: 500;

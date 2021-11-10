@@ -1,0 +1,31 @@
+.donation {
+  padding: 96px 0;
+  background-color: var(--green_tertiary);
+
+  &__inner {
+    display: flex;
+  }
+
+  &__left {
+    max-width: 627px;
+
+    margin-right: 76px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+
+    @extend %heading_1;
+    color: var(--primary_text);
+  }
+
+  &__subtitle {
+    margin-bottom: 48px;
+
+    max-width: 517px;
+    @extend %paragraph;
+    color: var(--secondary_text);
+  }
+
+
+}
